@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:mediumpurple;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+.pokebox{
+    width: 55%;
+    margin-top: 3%;
+;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    max-font-size: 54px;
+    color: black;
+    border: 1.5px solid black;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+}
+.pokedetail{
+    margin-top: 5%;
+
+}
+.popup{
+background-color: white;
+margin-left: 200px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    position: sticky;
+    top: 2em;
+}
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    width: 20%;
+    margin: 1%;
+    display: none;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+.cards {
+    list-style: none;
+padding: 20px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    margin: 1%;
+
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#loadMore {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: blue;
+    transition: .3s;
+    text-decoration: none;
+    width: 90%;
+    margin-left: 20px;
+
+}
+#loadMore:hover {
+    color: blue;
+    background-color: #fff;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+.noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr, td{
+    padding: 8px;
+}
+.table{
+    margin: auto;
+    margin-top: 5%;
+}
+@media screen and (max-width: 660px) {
+    .card-title {
+        font-size: 14px;
+
+    }
+
+    .popup {
+        background-color: white;
+        margin-left: 5px;
+
+    }
+    h1{
+        border: none;
+    }
+    .pokebox{
+        width: 30%;
+    }
+    .card{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 16px;
+
+    }
+
+    .popup {
+        background-color: white;
+        margin-left: 50px;
+
+    }
+    h1{
+       border: none;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .card-title{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    #loadMore {
+        width: 50%;
+        margin-left: 20px;
+
+    }
+}
